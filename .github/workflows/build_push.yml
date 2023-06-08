@@ -26,7 +26,7 @@ jobs:
   build:
     name: Build extension repo
     needs: check_wrapper
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
 
     steps:
       - name: Checkout master branch
