@@ -6,7 +6,7 @@ on:
 jobs:
   check_wrapper:
     name: Validate Gradle Wrapper
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
 
     steps:
       - name: Clone repo
@@ -18,7 +18,7 @@ jobs:
   build:
     name: Build extensions
     needs: check_wrapper
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
 
     steps:
       - name: Checkout PR
